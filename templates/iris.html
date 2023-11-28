@@ -1,0 +1,21 @@
+<html>
+   <head>
+    <title>Aplicación para predecir la flor Iris</title>
+   </head>
+   <body>
+     {% extends "home.html" %}
+     {% block content %}
+    <form action = "/predict" class="form-group" method = "post">
+    <p>Enter sepal length (cm):</p>
+    <p><input class="form-control" type = "text" name = "sl" /></p>
+    <p>Enter sepal width (cm):</p>
+    <p><input class="form-control" type = "text" name = "sw" /></p>
+    <p>Enter petal length (cm):</p>
+    <p><input class="form-control" type = "text" name = "pl" /></p>
+    <p>Enter petal width (cm):</p>
+    <p><input class="form-control" type = "text" name = "pw" /></p>
+    <p><input class="btn btn-primary" type = "submit" value = "submit" /></p>
+    </form>
+    {% endblock %}
+   </body>
+</html>
